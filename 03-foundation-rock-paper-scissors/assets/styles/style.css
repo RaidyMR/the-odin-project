@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex: 1;
+    gap: 2rem;
+	font-family: 'Nunito', sans-serif;
+    background-color: #363c4a;
+    color: #f1f1f1;
+    margin: 0;
+    padding: 2rem;
+}
+
+.history {
+    min-width: 40%;
+    border: solid 2px #f1f1f1;
+    border-radius: 12px;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+}
+
+.score-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
+    align-items: center;
+}
+
+.score-container > * {
+    text-align: center;
+    background-color: #333d5a;
+    border-style: solid;
+    border-color: #f1f1f1;
+    border-radius: 12px;
+    margin: 16px;
+    padding: 16px;
+    height: 150px;
+    width: 150px;
+}
+
+.score { font-size: 72px; }
+   
+.player-hands-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.button {
+    background-color: #333d5a;
+    border-radius: 12px;
+    border: none;
+    height: 150px;
+    width: 150px;
+    padding: 16px;
+    margin: 16px;
+    cursor: pointer;    
+}
+
+.button:hover { background-color: #3e4763;}
+
+.paper{ background-image:url('../images/paper.png'); }
+.rock{ background-image:url('../images/rock.png'); }
+.scissor{ background-image:url('../images/scissor.png'); }
+
+.last-moves-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.last-moves-container > #moves {
+    display: flex;
+    flex-direction: row;
+    padding: 8px;
+}
+
+#moves img {
+    margin: 16px;
+}
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    color: #000000;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    width: 24rem;
+    border-radius: 0.5rem;
+}
+
+.btn-restart {
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    background-color: #c0c0c0;
+    color:#000000;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-restart:hover { background-color: #737272; }
+
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}

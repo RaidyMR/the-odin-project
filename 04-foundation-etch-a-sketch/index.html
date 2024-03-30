@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <title>Etch-a-Sketch</title>
+</head>
+
+<body>
+    <div class="title">
+        <h1>ETCH A SKETCH</h1>
+    </div>
+    <div class="container">
+        <div class="container-option">
+            <div class="color-picker">
+                <h2>Color Picker</h2>
+                <input type="color" id="color-picker" value="#000000">
+
+            </div>
+            <div class="input-gridsize">
+                <h2>Grid Size</h2>
+                <input type="range" min="1" max="64" value="16" id="grid-size">
+                <div id="grid-size-number">16 X 16</div>
+            </div>
+            <button id="erase" onclick="eraseBoard()">Erase</button>
+            <button id="clear" onclick="clearBoard()">Clear</button>
+        </div>
+
+        <div class="main-content">    
+            <div id="container-board"></div>
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript" src="./assets/scripts/script.js"></script>
