@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <script src="./assets/scripts/script.js" defer></script>
+    <script src="./assets/scripts/modal.js" defer></script>
+    <title>My Library</title>
+</head>
+<body class="Frame">
+    <header class="Row">
+        <div class="container">
+            <h1>My Library</h1>
+            <button id="form-button">Add Book</button>
+        </div>
+    </header>
+    <main class="Row Expand">
+        <div class="bookshelf"></div>
+    </main>
+    <footer class="Row">
+        <p>
+            Copyright © 
+            <script>
+                document.write(new Date().getFullYear())
+            </script>
+            RaidyMR
+        </p>
+    </footer>
+    <div class="modal" id="form-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="book-form">
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+                <div class="form-group">
+                    <label for="author">Author</label>
+                    <input type="text" id="author" name="author" required>
+                </div>
+                <div class="form-group">
+                    <label for="pages">Pages</label>
+                    <input type="number" id="pages" name="pages" required>
+                </div>
+                <div class="form-group-checkbox" id="">
+                    <label for="read">Finished Read</label>
+                    <input type="checkbox" id="is-read" name="is-read">
+                </div>
+                <button type="submit">Add Book</button>
+        </div>        
+    </div>
+    <div class="modal" id="info-modal">
+        <div class="modal-content">
+            <div class="book-info">
+                <h2>Book Information</h2>
+            </div>
+            <div class="info-group">
+                <label for="title">Title: </label>
+                <p id="info-title"></p>
+            </div>
+            <div class="info-group">
+                <label for="author">Author: </label>
+                <p id="info-author"></p>
+            </div>
+            <div class="info-group">
+                <label for="pages">Pages: </label>
+                <p id="info-pages"></p>
+            </div>
+            <div class="info-group">
+                <label for="read">Finished Read: </label>
+                <p id="info-read"></p>
+            </div>
+            <button id="info-close">Close</button>
+        </div>
+    </div>
+</body>
+
+</html>
