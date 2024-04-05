@@ -1,0 +1,116 @@
+:root {
+    --font-family: 'Roboto', sans-serif;
+    --main-bg-color: rgba(215, 215, 215, 0.8);
+    --button-bg-color: #28303f;
+    --footer-and-button-font-color: #fff;
+}
+
+html, body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    margin: 0pt;
+}
+
+.Frame {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+.Row {
+    display: table-row;
+    height: 1px;
+}
+.Row.Expand {
+    height: auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/jason-leung-poI7DelFiVA-unsplash.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    font-family: var(--font-family)
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+header button {
+    background-color: var(--button-bg-color);
+    border: none;
+    border-radius: 8px;
+    color: var(--footer-and-button-font-color);
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 1rem 3rem;
+}
+
+header button:hover {
+    opacity: 0.8;
+}
+
+main h1 {
+    text-align: center;
+}
+
+#mainContent {
+    background-color: var(--main-bg-color);
+    margin: 5vh 10vw;
+    padding: 1rem;
+    border-radius: 12px;
+
+}
+
+.openHours {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menusContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.menuItem {
+    border: solid 2px var(--footer-and-button-font-color);
+    border-radius: 12px;
+    padding: 1rem;
+}
+
+.menuItem img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.menuItem h2 {
+    margin: 0.5rem 0;
+    text-align: center;
+}
+
+.menuItem p {
+    margin: 0;
+}
+
+footer {
+    color: var(--footer-and-button-font-color);
+    padding: 10px;
+    text-align: center;
+}
+
+footer a {
+    color: var(--footer-and-button-font-color-font-color);
+}
