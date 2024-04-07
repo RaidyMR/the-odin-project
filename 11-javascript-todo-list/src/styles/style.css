@@ -1,0 +1,192 @@
+:root {
+    --font-family: 'Roboto', sans-serif;
+    --box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+
+    --header-and-footer-color: #222831;
+    --sidebar-color: #31363F;
+    --button-color: #76ABAE;
+    --button-color-hover: #4a7778;
+    --light-text-color: #EEEEEE;
+
+    --low-priority-color: #ffd700;
+    --medium-priority-color: #FFA500;
+    --high-priority-color: #FF6347;
+}
+
+html, body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    margin: 0pt;
+}
+
+.Frame {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+.Row {
+    display: table-row;
+    height: 1px;
+}
+.Row.Expand {
+    height: auto;
+}
+
+header {
+    background-color: var(--header-and-footer-color);
+    color: var(--light-text-color);
+    box-shadow: var(--box-shadow);
+    padding: 1rem;
+}
+
+header h1 {
+    margin: 1rem;
+}
+
+main .content {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+aside {
+    background-color: var(--sidebar-color);
+    color: var(--light-text-color);
+    box-shadow: var(--box-shadow);
+    padding: 1rem;
+    width: 200px;
+}
+
+section {
+    background-color: var(--light-text-color);
+    color: var(--header-and-footer-color);
+    padding: 1rem;
+    flex: 1;
+}
+
+.project-details button {
+    width: 100%;
+}
+
+.task-details button {
+    width: 20%;
+}
+
+.project-details button, .task-details button {
+    background-color: var(--button-color);
+    color: var(--light-text-color);
+    font-weight: bolder;
+    border: none;
+    border-radius: 12px;
+    padding: 0.5rem 3rem;
+    margin: 0;
+    cursor: pointer;
+}
+
+.project-details button:hover, .task-details button:hover {
+    background-color: var(--button-color-hover);
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    padding: 0.5rem;
+}
+
+.project .icons {
+    display: none;
+}
+
+.project:hover .icons, .project .active {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.project:hover, .active {
+    background-color: var(--header-and-footer-color);
+    color: var(--light-text-color);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.project h5, .task h5, .task p {
+    margin: 0;
+}
+
+.project img, .task img {
+    width: 1rem;
+    height: auto;
+    cursor: pointer;
+}
+
+.task-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.task-details .project-title, .task-details .project-description {
+    margin: 0;
+}
+
+.tasks {
+    padding: 1rem 0;
+    display: grid;
+    gap: 1rem;
+}
+
+.task {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    border: solid var(--header-and-footer-color) 2px;
+    border-radius: 12px;
+    padding: 1rem;
+}
+
+.task .left, .task .right  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.task .icons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.low {
+    background-color: var(--low-priority-color);
+}
+
+.medium {
+    background-color: var(--medium-priority-color);
+}
+
+.high {
+    background-color: var(--high-priority-color);
+}
+
+footer {
+    background-color: var(--header-and-footer-color);
+    color: var(--light-text-color);
+    box-shadow: var(--box-shadow);
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+}

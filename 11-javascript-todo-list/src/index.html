@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+</head>
+<body class="Frame">
+    <header class="Row">
+        <h1>Todo List</h1>
+    </header>
+    <main class="Row Expand">
+        <div class="content">
+            <aside>
+                <div class="project-details">
+                    <button id="add-project">New Project</button>
+                </div>
+                <div class="projects"></div>
+            </aside>
+            <section>
+                <div class="task-details">
+                    <h2 class="project-title">dummy</h2>
+                    <p class="project-description"></p>
+                    <button id="add-task">New Task</button>
+                </div>
+                <div class="tasks"></div>
+            </section>
+        </div>
+        <div class="modals">
+            <div id="project-modal">
+                <div class="modal-content">
+                    <h2 id="project-modal-title">dummy</h2>
+                    <form action="" method="post" id="project-form">
+                        <div class="data">
+                            <div class="input">
+                                <label for="project-title">Title</label>
+                                <input type="text" id="project-title" name="project-title" required>
+                            </div>
+                            <div class="input">
+                                <label for="project-description">Description</label>
+                                <textarea id="project-description" name="project-description"></textarea>
+                            </div>
+                        </div>
+                        <button id="submit-project" type="submit"></button>
+                    </form>
+                    <button id="close-project">Close</button>
+                </div>
+            </div>
+            <div id="task-modal">
+                <div class="modal-content">
+                    <h2 id="task-modal-title">dummy</h2>
+                    <form action="" method="post" id="task-form">
+                        <div class="data">
+                            <div class="input">
+                                <label for="task-title">Title</label>
+                                <input type="text" id="task-title" name="task-title" required>
+                            </div>
+                            <div class="input">
+                                <label for="task-description">Description</label>
+                                <textarea id="task-description" name="task-description"></textarea>
+                            </div>
+                            <div class="input">
+                                <label for="task-due-date">Due Date</label>
+                                <input type="date" id="task-due-date" name="task-due-date">
+                            </div>
+                            <div class="input">
+                                <label for="task-priority">Priority</label>
+                                <select id="task-priority" name="task-priority">
+                                    <option value="low">Low</option>
+                                    <option value="medium">Medium</option>
+                                    <option value="high">High</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button id="submit-task" type="submit"></button>
+                    </form>
+                    <button id="close-task">Close</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="Row">
+        <p>
+            Copyright © 
+            <script>
+                document.write(new Date().getFullYear())
+            </script>
+            RaidyMR
+        </p>
+    </footer>
+</body>
+</html>
