@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./assets/scripts/script.js" defer></script>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <title>Weather Forecast</title>
+</head>
+<body>
+    <header>
+        <h1>Weather Forecast</h1>
+    </header>
+    <main>
+        <div id="weather-info">
+            <div class="top">
+                <div class="searchbar">
+                    <form id="search-form">
+                        <input type="text" id="search-input" placeholder="Enter city name">
+                        <button type="submit">Search</button>
+                    </form>
+                </div>
+                <div class="scales">
+                    <input type="checkbox" id="toggle" class="checkbox">
+                    <label for="toggle" class="label">
+                        <p id="celcius-logo">°C</p>
+                        <p id="fahrenheit-logo">°F</p>
+                    </label>
+                </div>
+            </div>
+            <div class="middle">
+                <div class="location">
+                    <div class="city"></div>
+                    <div class="country"></div>
+                    <div class="timezone"></div>
+                </div>
+                <div class="weather">
+                    <div class="current">
+                        <img class="icon" src="" alt="">
+                        <div class="description"></div>
+                    </div>
+                    <div class="temperature"></div>
+                    <div class="details">
+                        <div class="humidity"></div>
+                        <div class="wind"></div>
+                        <div class="feels-like"></div>
+                    </div>  
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="hourly">
+                    <h2>Today Forecast</h2>
+                    <div class="hourly-forecast"></div>
+                </div>                
+            </div>
+        </div>
+        <p>Powered by <a href="https://www.weatherapi.com/" title="Free Weather API">WeatherAPI.com</a></p>
+    </main>
+    <footer></footer>
+</body>
+</html>
