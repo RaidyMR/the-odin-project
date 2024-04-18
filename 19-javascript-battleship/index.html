@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <script type="module" src="./assets/scripts/main.js" defer></script>
+    <title>Battleship</title>
+</head>
+<body>
+    <header>
+        <h1>Battleship</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="ships">
+                <div class="title">
+                    <h2>Ships</h2>
+                </div>
+                <div class="ship carrier">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="ship battleship">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="ship cruiser">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="ship submarine">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="ship destroyer">
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="icons">
+                    <div class="place-ship">
+                        <div class="icon left-click"></div>
+                        <p>Place Ship</p>
+                    </div>
+                    <div class="Rotate">
+                        <div class="icon r-key"></div>
+                        <p>Rotate</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="boards">
+                <div class="human">
+                    <div class="title">
+                        <h2>Human</h2>
+                    </div>
+                    <div class="board"></div>
+                </div>
+                <div class="computer">
+                    <div class="title">
+                        <h2>Computer</h2>
+                    </div>
+                    <div class="board"></div>
+                </div>
+            </div>
+            <div class="logs">
+                <div class="title">
+                    <h2>Log</h2>
+                </div>
+                <div class="messages"></div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="begin">Begin</button>
+            <button id="reset">Reset</button>
+        </div>
+    </main>
+    <footer>
+        <p>
+            Copyright © 
+            <script>
+                document.write(new Date().getFullYear())
+            </script>
+            RaidyMR
+        </p>
+    </footer>
+</body>
+</html>
