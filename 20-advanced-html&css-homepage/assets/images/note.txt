@@ -1,0 +1,14 @@
+[
+    {
+        name: "A Woman Wearing Eyeglasses using Laptop",
+        author: "Andrea Piacquadio",
+        url: "https://www.pexels.com/photo/a-woman-wearing-eyeglasses-using-laptop-5046307/",
+        path: "./images/pexels-olly-5046307.jpg"
+    },
+    {
+        name: "Woman Working From Home by Messy Desk",
+        author: "Andrea Piacquadio",
+        url: "https://www.pexels.com/photo/woman-working-from-home-by-messy-desk-5046414/",
+        path: "./images/pexels-olly-5046414.jpg"
+    }
+]
