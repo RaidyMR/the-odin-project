@@ -3,19 +3,173 @@
 :root {
     --roboto-font: 'Roboto', sans-serif;
     --playfair-font: 'Playfair Display', serif;
+    --header-and-footer-color: #0891B2;
+    --background-color: #f4f4f4;
+    --text-color: #333;
+    --box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--playfair-font);
+    font-size: 1rem;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 h1 {
-    color: #333;
-    text-align: center;
-    font-family: var(--playfair-font);
+    font: 500 2.5rem var(--playfair-font);
+}
+
+h2 {
+    font: 500 1.5rem var(--playfair-font);
+}
+
+h3 {
+    font: 500 1.25rem var(--playfair-font);
 }
 
 p {
-    color: #333;
-    font-family: var(--roboto-font);
+    font: 400 1rem var(--roboto-font);
 }
 
-img {
-    max-width: 1rem;
+header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: linear-gradient(168deg, var(--header-and-footer-color) 60%, var(--background-color) 60%);
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+header .image {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-image: url('../images/pexels-olly-5046307.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+header .about {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: black;
+}
+
+.about p {
+    text-align: left;
+}
+
+.about .icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    font-size: 1.5rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 3vw;
+    text-align: center;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+}
+
+.project-image {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    height: 32vh;
+    width: 100%;
+    color: white;
+    padding: 1rem;
+}
+
+.about-project {
+    padding: 1rem;
+}
+
+.header-project {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-project .icons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-project p {
+    text-align: left;
+}
+
+
+a img, a i {
+    width: 1.5rem;
+    font-size: 1.5rem;
+}
+
+
+
+footer {
+    color: #fff;
+    background-color: var(--header-and-footer-color);
+    text-align: center;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.description {
+    text-align: left;
+}
+
+.address p, .contacts p{
+    font-size: 0.75rem;
+    text-align: left;
+}
+
+footer .icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    font-size: 2rem;
+}
+
+.footer-image {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-image img {
+    width: 100%;
+
 }
